@@ -44,18 +44,17 @@ echo -e "\n[Scratch Game Launcher installer] Installing desktop icons."
 sudo mkdir -p $LAUNCHER_DIR
 sudo git clone git://github.com/punkbass/Scratch-game-launcher.git $LAUNCHER_DIR
 
-# Epic Ninja
-sudo cp $LAUNCHER_DIR/epic-ninja.desktop /usr/share/applications
+sudo cp $LAUNCHER_DIR/Mario-Lozano.desktop /usr/share/applications
 
-if test -e ~/Desktop/epic-ninja.desktop; 
+if test -e ~/Desktop/Mario-Lozano.desktop; 
 then
-	echo -e "\n~/Desktop/epic-ninja.desktop file exists!\nDo you want to remove it[y/n]?"
-	delete ~/Desktop/epic-ninja.desktop;	
+	echo -e "\n~/Desktop/Mario-Lozano.desktop file exists!\nDo you want to remove it[y/n]?"
+	delete ~/Desktop/Mario-Lozano.desktop;	
 fi
 	
-sudo ln -s $LAUNCHER_DIR/epic-ninja.desktop ~/Desktop/epic-ninja.desktop
-sudo chmod +x ~/Desktop/epic-ninja.desktop
-sudo chown $(whoami) ~/Desktop/epic-ninja.desktop
+sudo ln -s $LAUNCHER_DIR/Mario-Lozano.desktop ~/Desktop/Mario-Lozano.desktop
+sudo chmod +x ~/Desktop/Mario-Lozano.desktop
+sudo chown $(whoami) ~/Desktop/Mario-Lozano.desktop
 
 sudo cp $LAUNCHER_DIR/epic-ninja.desktop /usr/share/applications
 
@@ -66,31 +65,24 @@ then
 	delete ~/Desktop/geometry-jump.desktop;	
 fi
 	
-sudo ln -s $LAUNCHER_DIR/geometry-jump.desktop ~/Desktop/geometry-jump.desktop
-sudo chmod +x ~/Desktop/geometry-jump.desktop
-sudo chown $(whoami) ~/Desktop/geometry-jump.desktop
-
-sudo cp $LAUNCHER_DIR/geometry-jump.desktop /usr/share/applications
 
 echo -e "\n[Scratch Game Launcher installer] Installing controller configurations."
 sudo mkdr /home/pi/.qjoypad3
 
 cd /home/pi/.qjoypad3
-sudo wget https://github.com/punkbass/Scratch-game-launcher/raw/master/Epic-Ninja.lyt
 sudo wget https://github.com/punkbass/Scratch-game-launcher/raw/master/FOIL-Mario.lyt
 
 cd $LAUNCHER_DIR
 
 #Chmod scripts to be runnable
-
+sudo chmod +x Mario-Lozano.sh
 #sudo chmod +x Pony-Math.sh
 #sudo chmod +x Rabbit-Eats-Math-for-Breakfast-Pi.sh
-sudo chmod +x Epic-Ninja.sh
+#sudo chmod +x Epic-Ninja.sh
 #sudo chmod +x FOIL-Mario.sh
-sudo chmod +x Geometry-Jump.sh
+#sudo chmod +x Geometry-Jump.sh
 
 
 sleep  2
 echo -e "\nComplete!\n"
-
 echo -e "\nEverything done! \n"
