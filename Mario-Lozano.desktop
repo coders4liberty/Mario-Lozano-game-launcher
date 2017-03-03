@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Super Maro Lozano
+Comment=Mario game starring Mario Lozano by Punkbass on Scratch
+Exec=sh /opt/kano/scratch-game-launcher/Mario-Lozano.sh
+Icon=/opt/kano/scratch-game-launcher/Mario-Lozano-icon.png
+Type=Application
+Categories=Application;Game;
