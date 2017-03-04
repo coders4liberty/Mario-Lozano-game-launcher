@@ -32,8 +32,10 @@ then
 	delete $LAUNCHER_DIR ;
 fi
 
-echo -e "[Scratch Game Launcher installer] Installing Midori ..."
-sudo apt-get -y install midori
+#echo -e "[Scratch Game Launcher installer] Installing Midori ..."
+#sudo apt-get -y install midori
+echo -e "[Scratch Game Launcher installer] Installing Chromium ..."
+sudo apt-get -y install chromium-web-browser
 echo -e "[Scratch Game Launcher installer] Installing JoyPad Config tool ..."
 sudo apt-get -y install qjoypad
 
