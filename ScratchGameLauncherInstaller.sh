@@ -42,7 +42,7 @@ sudo apt-get -y install git
 
 echo -e "\n[Scratch Game Launcher installer] Installing desktop icons."
 sudo mkdir -p $LAUNCHER_DIR
-sudo git clone git://github.com/coders4liberty/Scratch-game-launcher.git $LAUNCHER_DIR
+sudo git clone git://github.com/coders4liberty/Mario-Lozano-game-launcher.git $LAUNCHER_DIR
 
 sudo cp $LAUNCHER_DIR/Mario-Lozano.desktop /usr/share/applications
 
