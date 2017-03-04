@@ -42,7 +42,7 @@ sudo apt-get -y install git
 
 echo -e "\n[Scratch Game Launcher installer] Installing desktop icons."
 sudo mkdir -p $LAUNCHER_DIR
-sudo git clone git://github.com/punkbass/Scratch-game-launcher.git $LAUNCHER_DIR
+sudo git clone git://github.com/coders4liberty/Scratch-game-launcher.git $LAUNCHER_DIR
 
 sudo cp $LAUNCHER_DIR/Mario-Lozano.desktop /usr/share/applications
 
@@ -70,7 +70,7 @@ echo -e "\n[Scratch Game Launcher installer] Installing controller configuration
 sudo mkdr /home/pi/.qjoypad3
 
 cd /home/pi/.qjoypad3
-sudo wget https://github.com/punkbass/Scratch-game-launcher/raw/master/FOIL-Mario.lyt
+sudo wget https://github.com/coders4liberty/Scratch-game-launcher/raw/master/FOIL-Mario.lyt
 
 cd $LAUNCHER_DIR
 
