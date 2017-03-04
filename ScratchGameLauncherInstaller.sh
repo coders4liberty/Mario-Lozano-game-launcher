@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LAUNCHER_DIR="/opt/kano/scratch-game-launcher"
+LAUNCHER_DIR="/opt/kano/Mario-Lozano-game-launcher"
 
 delete()
 {  
